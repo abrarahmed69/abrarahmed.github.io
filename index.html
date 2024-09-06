@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Abrar's Portfolio</title>
+    <title>Abrar Ahmed's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
@@ -14,6 +14,7 @@
             color: #e0e0e0;
             line-height: 1.6;
             overflow-x: hidden; /* Prevent horizontal scrolling */
+            scroll-behavior: smooth; /* Enable smooth scrolling */
         }
 
         .background {
@@ -29,7 +30,7 @@
 
         header {
             text-align: center;
-            background: transparent; /* Changed to transparent */
+            background: transparent;
             padding: 40px 20px;
             border-bottom: 5px solid #00aaff;
             color: #fff;
@@ -40,7 +41,7 @@
             width: 180px;
             border: 5px solid #fff;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-            animation: zoomIn 5s infinite; /* Apply zoom-in animation */
+            animation: zoomIn 5s infinite;
         }
 
         @keyframes zoomIn {
@@ -48,7 +49,7 @@
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.1); /* Zoom in */
+                transform: scale(1.1);
             }
             100% {
                 transform: scale(1);
@@ -82,7 +83,7 @@
             margin: auto;
             padding: 0 20px;
             position: relative;
-            z-index: 1; /* Ensure the content is above the background */
+            z-index: 1;
         }
 
         section {
@@ -92,7 +93,7 @@
             border-radius: 8px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
             transition: background 0.3s ease;
-            text-align: center; /* Center text */
+            text-align: center;
             position: relative;
         }
 
@@ -215,18 +216,27 @@
             padding: 20px;
             background: #222;
             border-radius: 8px;
-            text-align: center; /* Center text in social links */
         }
 
         .social-links a {
             margin: 0 15px;
-            color: #e0e0e0;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
+            font-size: 1.5rem;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #00aaff;
+            color: #fff;
+            transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .social-links a:hover {
-            color: #fff;
+            background: transparent;
+            color: #00aaff;
+            transform: scale(1.1);
+            box-shadow: 0 0 0 2px #fff;
         }
 
         @media (max-width: 768px) {
@@ -249,8 +259,8 @@
 
     <header>
         <div class="container">
-            <img src="https://media.discordapp.net/attachments/1085800111143125074/1281290995341983754/image.png?ex=66db2eba&is=66d9dd3a&hm=005e06cde2252dc1071fb93f9360550720f79514bcdb30557b4e331095c7ff17&=&format=webp&quality=lossless&width=674&height=670" alt="Abrar Faysal Ahmed" class="profile-picture">
-            <h1>Abrar's Portfolio 🌟</h1>
+            <img src="https://media.discordapp.net/attachments/1085800111143125074/1281565545463808073/Abrar_Ahmed.png?ex=66dc2e6c&is=66dadcec&hm=74d5dce2e59a55cc335e0293aa1a56d472ee960bdba4978165cd8f2af32463ec&=&format=webp&quality=lossless&width=674&height=670" alt="Abrar Ahmed" class="profile-picture">
+            <h1>Abrar Ahmed's Portfolio 🌟</h1>
         </div>
     </header>
 
@@ -270,23 +280,27 @@
             <p>💼 Here's a snapshot of my technical toolkit: Java (Spring, Hibernate), Unreal Engine, Unity 3D, SQL, NoSQL (MongoDB), and more. I'm always on the lookout for new technologies to master!</p>
         </section>
 
+        <section id="contact
         <section id="contact">
             <h2>Contact</h2>
             <p>📬 Let's connect! Whether you have a question or just want to say hi, I'm all ears. Reach out to me, and let's start a conversation that could lead to our next big adventure.</p>
             <a href="mailto:abrarfaysalahmed69@gmail.com" class="button">Email Me</a>
             <div class="social-links">
-                <a href="https://www.facebook.com/profile.php?id=100078012922337/"
-                <a href="https://www.facebook.com/profile.php?id=100078012922337/" target="_blank"><i class="fa fa-facebook"></i> Facebook</a>
-                <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fa fa-instagram"></i> Instagram</a>
-                <a href="https://discord.gg/uSStHepegr" target="_blank"><i class="fa fa-discord"></i> Discord</a>
+                <a href="https://www.facebook.com/profile.php?id=100078012922337" target="_blank" aria-label="Facebook">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://www.instagram.com/axis96909" target="_blank" aria-label="Instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://discord.gg/uSStHepegr" target="_blank" aria-label="Discord">
+                    <img src="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png" alt="Discord Logo" style="width: 24px; height: 24px;">
+                </a>
             </div>
         </section>
     </div>
-    <footer>
-        <p>Copyright © 2024 Abrar Ahmed. All rights reserved.</p>
-    </footer>
 
-    <!-- Font Awesome for social media icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>© 2024 Abrar Ahmed. All rights reserved.</p>
+    </footer>
 </body>
 </html>
